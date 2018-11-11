@@ -22,4 +22,4 @@ ionic serve --lab
 ```
 
 ## Reference
-Get started with Ionic(<https://ionicframework.com/getting-started#cli>)
+Get started with Ionic (<https://ionicframework.com/getting-started#cli>)
