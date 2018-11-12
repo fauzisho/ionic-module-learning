@@ -1,1 +1,1 @@
-# ionic-module-beginners
+# ionic-module-learning
