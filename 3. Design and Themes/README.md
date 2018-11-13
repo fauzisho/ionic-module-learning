@@ -34,6 +34,44 @@ $colors: (
 );
 ```
 
+## Override Global SASS Variables in Ionic Applications
+
+
+home.html:
+```
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list padding-bottom>
+
+    <ion-item>
+      <ion-label fixed>Username</ion-label>
+      <ion-input type="text" value=""></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label fixed>Password</ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
+  
+  </ion-list>
+  <button ion-button block>Login</button>
+</ion-content>
+
+```
+
+variables.scss :
+```
+$item-md-padding-left: 0;
+$item-ios-padding-left: 0;
+```
+
+
+
 ## Run Your Apps
 
 ```
