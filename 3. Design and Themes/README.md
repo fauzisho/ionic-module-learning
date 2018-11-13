@@ -70,6 +70,22 @@ $item-md-padding-left: 0;
 $item-ios-padding-left: 0;
 ```
 
+##Set Ionic Config Parameters
+
+app.module.ts :
+```
+imports: [
+    BrowserModule,
+    IonicModule.forRoot(MyApp,{
+      'iconMode': 'ios',
+      'tabsLayout': 'icon-left',
+       platforms: {
+        ios: {'tabsPlacement': 'bottom'},
+        android: {'tabsPlacement': 'top'}
+      }
+    })
+  ],
+```
 
 
 ## Run Your Apps
