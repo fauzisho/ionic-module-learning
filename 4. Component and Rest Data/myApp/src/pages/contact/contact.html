@@ -7,11 +7,13 @@
 </ion-header>
 
 <ion-content>
-  <ion-list>
-    <ion-list-header>Follow us on Twitter</ion-list-header>
-    <ion-item>
-      <ion-icon name="ionic" item-start></ion-icon>
-      @ionicframework
+  <ion-list class="listContact">
+   <ion-item >
+     <ion-avatar item-left>
+       <img [src]="person.picture.thumbnail" alt="">
+     </ion-avatar>
+     {{person.name.first}} {{person.name.last}}
+     <ion-note item-right>{{person.phone}}</ion-note>
     </ion-item>
   </ion-list>
 </ion-content>
