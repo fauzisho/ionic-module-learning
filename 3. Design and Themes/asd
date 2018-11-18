@@ -1,0 +1,4 @@
+The evaluation architecture result is MVP and MVVM architecture are better than MVC on performance, testability, and modifiability in android platform. However, result of comparing MVP and MVVM architecture is MVVM not necessarily better that MVP. Databinding mechanism has positive impact on testability and testability but a negative impact on modifiability.
+
+
+1.1	
