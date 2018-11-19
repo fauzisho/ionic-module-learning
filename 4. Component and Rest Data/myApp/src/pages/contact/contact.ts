@@ -7,9 +7,21 @@ import {People} from '../../providers/people/people'
   templateUrl: 'contact.html'
 })
 export class ContactPage {
-  public people = this.service.getPeople()
+  // public people = this.service.getPeople()
+  public people = [];
+  public errorMessage : string;
+
   public reloadData = false;
-  constructor(public navCtrl: NavController, public service:People,) {}
+  constructor(public navCtrl: NavController, public service:People,) {
+    this.service.getPeopleFromApi()
+    .subscribe(
+      (response) => {
+        console.log(response);
+        this.people = response["results"]
+      },
+      (error) => console.log(error)
+    )
+  }
   toggleReloadData() {
     this.reloadData = !this.reloadData
   }
