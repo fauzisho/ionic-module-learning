@@ -22,36 +22,6 @@ export class ContactPage {
       (error) => console.log(error)
     )
   }
-  doRefresh(e) {
-    this.service.getPeopleFromApi()
-    .subscribe(
-      (response) => {
-        console.log(response);
-        this.people = response["results"]
-        e.complete()
-      },
-      (error) => {
-        console.log(error)
-        e.complete()
-      }
-    )
-  }
-
-  doInfinite(e) {
-    this.service.getPeopleFromApi()
-    .subscribe(
-      (response) => {
-        console.log(response);
-        this.people.push(...response["results"])
-        e.complete()
-      },
-      (error) => {
-        console.log(error)
-        e.complete()
-      }
-    )
-  }
-  
   toggleReloadData() {
     this.reloadData = !this.reloadData
   }
