@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController} from 'ionic-angular';
 import {People} from '../../providers/people/people'
+import {DetailContactPage} from '../../pages/detail-contact/detail-contact';
 
 @Component({
   selector: 'page-contact',
@@ -10,9 +11,8 @@ export class ContactPage {
   // public people = this.service.getPeople()
   public people = [];
   public errorMessage : string;
-
   public reloadData = false;
-  constructor(public navCtrl: NavController, public service:People,) {
+  constructor(public navCtrl: NavController, public service:People) {
     this.service.getPeopleFromApi()
     .subscribe(
       (response) => {
@@ -55,4 +55,9 @@ export class ContactPage {
   toggleReloadData() {
     this.reloadData = !this.reloadData
   }
+
+  pushPerson(user){
+    this.navCtrl.push(DetailContactPage,user)
+  }
+
 }

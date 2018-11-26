@@ -7,11 +7,13 @@ import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
+import {DetailContactPage} from '../pages/detail-contact/detail-contact';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { People } from '../providers/people/people';
 import { HttpClientModule } from '@angular/common/http'; 
+
 
 @NgModule({
   declarations: [
@@ -19,7 +21,8 @@ import { HttpClientModule } from '@angular/common/http';
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    DetailContactPage
   ],
   imports: [
     BrowserModule,
@@ -39,7 +42,8 @@ import { HttpClientModule } from '@angular/common/http';
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    DetailContactPage
   ],
   providers: [
     StatusBar,
