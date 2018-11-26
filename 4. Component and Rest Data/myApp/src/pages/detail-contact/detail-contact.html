@@ -14,5 +14,13 @@
 
 
 <ion-content padding>
-    <pre>{{user | json}}</pre>
+    <div class="list card">
+        <div class="item">
+            <h2>{{user.name.title}} {{user.name.first}} {{user.name.last}}</h2>
+            <p>{{user.email}}</p>
+        </div>
+        <div class="item item-image">
+            <img [src]="user.picture.thumbnail" alt="" />
+        </div>
+    </div>
 </ion-content>
