@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "767705061137",
+    "firebase_url": "https://ionic-native-73744.firebaseio.com",
+    "project_id": "ionic-native-73744",
+    "storage_bucket": "ionic-native-73744.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:767705061137:android:2b7c8f4e9a531e1c",
+        "android_client_info": {
+          "package_name": "com.lkuan.ionicnative"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "767705061137-ftj4ip2udg0g31ng9t2r4jg9u1j18ofe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMtSuhvSWcQWBRItiWJLDBmikAJArJys8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
