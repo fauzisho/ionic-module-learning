@@ -71,12 +71,20 @@ export class ContactPage {
   }
 
   searchPerson(e){
-      console.log(e.target.value)
+    console.log(e.target.value)
+    let val = e.target.value;
+    if(val && val.trim() != ''){
       this.people = this.peopleAll.filter((person) => {
-          return person.name.first.toLowerCase().indexOf(e.target.value.toLowerCase()) > -1 ||
-           person.name.last.toLowerCase().indexOf(e.target.value.toLowerCase()) > -1;
-      })
-      console.log(this.people)
+        return person.name.first.toLowerCase().indexOf(e.target.value.toLowerCase()) > -1 ||
+         person.name.last.toLowerCase().indexOf(e.target.value.toLowerCase()) > -1;
+    })
+    console.log(this.people)
+    }else {
+      this.people = this.peopleAll.filter((person) => {
+        return person.name.first.toLowerCase().indexOf('') > -1 ||
+         person.name.last.toLowerCase().indexOf('') > -1;
+    })
+    }
   }
 
   actionFilter(){
