@@ -61,6 +61,10 @@ export class ContactPage {
       }
     )
   }
+
+  Upload(){
+    
+  }
   
   toggleReloadData() {
     this.reloadData = !this.reloadData
